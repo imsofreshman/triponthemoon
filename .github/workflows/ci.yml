@@ -38,5 +38,6 @@ jobs:
           DROPTIMIZER_0_UPGRADE_LEVEL_HEROIC: 0
           DROPTIMIZER_0_UPGRADE_LEVEL_NORMAL: 0
           DROPTIMIZER_0_UPGRADE_LEVEL_MYTHIC: 0
+          DROPTIMIZER_ARCHON_TALENTS: FALSE
         run: |
           xvfb-run --auto-servernum python3 app/app.py
