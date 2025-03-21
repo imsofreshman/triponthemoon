@@ -35,8 +35,8 @@ jobs:
           WOWAUDIT_API_TOKEN: ${{ secrets.WOWAUDIT_API_TOKEN }}
           UPDATE_INTERVAL_HOURS: ${{ vars.UPDATE_INTERVAL_HOURS }}
           DROPTIMIZER_0_FIGHT_DURATION: 300 # And other settings like described above
-          DROPTIMIZER_X_UPGRADE_LEVEL_HEROIC: -1
-          DROPTIMIZER_X_UPGRADE_LEVEL_NORMAL: -1
-          DROPTIMIZER_X_UPGRADE_LEVEL_MYTHIC: -1
+          DROPTIMIZER_0_UPGRADE_LEVEL_HEROIC: 0
+          DROPTIMIZER_0_UPGRADE_LEVEL_NORMAL: 0
+          DROPTIMIZER_0_UPGRADE_LEVEL_MYTHIC: 0
         run: |
           xvfb-run --auto-servernum python3 app/app.py
